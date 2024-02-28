@@ -1,0 +1,25 @@
+@api_url = http://localhost:3500/v1.0/invoke/inf-dapr-sdk-demo/method
+
+
+## Echo
+POST {{api_url}}/echo
+Content-Type: application/json
+
+{
+    "message": "this is a message",
+    "create_at": "2022-04-22 21:04:00"
+}
+
+### update
+
+POST {{api_url}}/update_info
+
+{
+    "is_new": false,
+    "age": 100,
+    "body_heights": 170
+
+}
+
+### get signature
+POST {{api_url}}/get_signature
